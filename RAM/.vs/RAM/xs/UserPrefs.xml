@@ -3,9 +3,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="RAM.Data/Domain/Models/Memory.cs">
     <Files>
       <File FileName="RAM.Data/Domain/Models/ApiUser.cs" Line="36" Column="33" />
-      <File FileName="RAM.Data/Shared/BaseEntity.cs" Line="16" Column="1" />
-      <File FileName="RAM.Data/Domain/Models/RefreshToken.cs" Line="15" Column="10" />
-      <File FileName="RAM.Data/Domain/Models/Memory.cs" Line="4" Column="34" />
+      <File FileName="RAM.Data/Shared/BaseEntity.cs" />
+      <File FileName="RAM.Data/Domain/Models/RefreshToken.cs" />
+      <File FileName="RAM.Data/Domain/Models/Memory.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

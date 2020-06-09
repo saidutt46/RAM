@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alpha/Documents/hacking/office-work/RAM/RAM.Data/RAM.Data.csproj",
+      "projectUniqueName": "/Users/alpha/Documents/hacking/office-work/RAM-PROJECT/RAM/RAM.Data/RAM.Data.csproj",
       "projectName": "RAM.Data",
-      "projectPath": "/Users/alpha/Documents/hacking/office-work/RAM/RAM.Data/RAM.Data.csproj",
+      "projectPath": "/Users/alpha/Documents/hacking/office-work/RAM-PROJECT/RAM/RAM.Data/RAM.Data.csproj",
       "packagesPath": "/Users/alpha/.nuget/packages/",
-      "outputPath": "/Users/alpha/Documents/hacking/office-work/RAM/RAM.Data/obj/",
+      "outputPath": "/Users/alpha/Documents/hacking/office-work/RAM-PROJECT/RAM/RAM.Data/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

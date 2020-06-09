@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{F5BC47A3-BE73-4399-B3D6-0D2787B78BB0}|Default">
+  <MonoDevelop.Ide.ItemProperties.RAM.WebApi FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RAM.Data/Domain/Models/Memory.cs">
+    <Files>
+      <File FileName="RAM.Data/Domain/Models/ApiUser.cs" Line="36" Column="33" />
+      <File FileName="RAM.Data/Shared/BaseEntity.cs" Line="16" Column="1" />
+      <File FileName="RAM.Data/Domain/Models/RefreshToken.cs" Line="15" Column="10" />
+      <File FileName="RAM.Data/Domain/Models/Memory.cs" Line="4" Column="34" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RAM" expanded="True">
+            <Node name="RAM.Data" expanded="True">
+              <Node name="Domain" expanded="True">
+                <Node name="Models" expanded="True">
+                  <Node name="Memory.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Shared" expanded="True" />
+            </Node>
+            <Node name="RAM.Infrastructure" expanded="True" />
+            <Node name="RAM.WebApi" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RAM.Data FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.RAM.Infrastructure FirstBuild="True" />
+</Properties>

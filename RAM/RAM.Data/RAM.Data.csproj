@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Dto\" />
+    <Folder Include="Dto\Request\" />
+    <Folder Include="Dto\Response\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Models\" />
+    <Folder Include="Shared\" />
+  </ItemGroup>
+</Project>

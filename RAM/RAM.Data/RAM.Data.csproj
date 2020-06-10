@@ -11,5 +11,14 @@
     <Folder Include="Domain\" />
     <Folder Include="Domain\Models\" />
     <Folder Include="Shared\" />
+    <Folder Include="Dto\Response\AuthResponses\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Dto\Request\AuthRequests\" />
+    <Folder Include="Dto\DtoModels\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\RepoInterfaces\" />
+    <Folder Include="Shared\Specifications\" />
+    <Folder Include="Interfaces\AuthInterfaces\" />
+    <Folder Include="AuthUseCaseServices\" />
   </ItemGroup>
 </Project>

@@ -1,23 +1,23 @@
 ﻿<Properties StartupConfiguration="{F5BC47A3-BE73-4399-B3D6-0D2787B78BB0}|Default">
-  <MonoDevelop.Ide.ItemProperties.RAM.WebApi FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RAM.Data/Domain/Models/Memory.cs">
+  <MonoDevelop.Ide.ItemProperties.RAM.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RAM.Data/Dto/Request/MemoriesRequest.cs">
     <Files>
-      <File FileName="RAM.Data/Domain/Models/ApiUser.cs" Line="36" Column="33" />
-      <File FileName="RAM.Data/Shared/BaseEntity.cs" />
-      <File FileName="RAM.Data/Domain/Models/RefreshToken.cs" />
-      <File FileName="RAM.Data/Domain/Models/Memory.cs" Line="17" Column="1" />
+      <File FileName="RAM.Data/Interfaces/AuthInterfaces/ITokenFactory.cs" Line="9" Column="1" />
+      <File FileName="RAM.Data/Shared/UseCaseResponseMessage.cs" Line="16" Column="1" />
+      <File FileName="RAM.Data/AuthUseCaseServices/ExchangeRefreshTokenUseCase.cs" Line="16" Column="58" />
+      <File FileName="RAM.Data/AuthUseCaseServices/LoginUseCase.cs" Line="40" Column="1" />
+      <File FileName="RAM.Data/AuthUseCaseServices/RegisterUserUseCase.cs" Line="19" Column="1" />
+      <File FileName="RAM.Infrastructure/RAM.Infrastructure.csproj" Line="27" Column="15" />
+      <File FileName="RAM.Data/Dto/Request/MemoriesRequest.cs" Line="18" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RAM" expanded="True">
-            <Node name="RAM.Data" expanded="True">
-              <Node name="Domain" expanded="True">
-                <Node name="Models" expanded="True">
-                  <Node name="Memory.cs" selected="True" />
-                </Node>
+            <Node name="RAM.Data" expanded="True" selected="True">
+              <Node name="Dto" expanded="True">
+                <Node name="Request" expanded="True" />
               </Node>
-              <Node name="Shared" expanded="True" />
             </Node>
             <Node name="RAM.Infrastructure" expanded="True" />
             <Node name="RAM.WebApi" expanded="True" />
@@ -27,11 +27,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.RAM.Data FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.RAM.Infrastructure FirstBuild="True" />
 </Properties>

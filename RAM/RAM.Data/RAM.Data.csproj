@@ -20,5 +20,12 @@
     <Folder Include="Shared\Specifications\" />
     <Folder Include="Interfaces\AuthInterfaces\" />
     <Folder Include="AuthUseCaseServices\" />
+    <Folder Include="Dto\API_UI_DTO\" />
+    <Folder Include="Dto\API_UI_DTO\Request\" />
+    <Folder Include="Dto\API_UI_DTO\Response\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
   </ItemGroup>
 </Project>

@@ -1,26 +1,49 @@
 ﻿<Properties StartupConfiguration="{F5BC47A3-BE73-4399-B3D6-0D2787B78BB0}|Default">
   <MonoDevelop.Ide.ItemProperties.RAM.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RAM.Data/Dto/Request/MemoriesRequest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RAM.Infrastructure/Data/Identity/AppUser.cs">
     <Files>
-      <File FileName="RAM.Data/Interfaces/AuthInterfaces/ITokenFactory.cs" Line="9" Column="1" />
-      <File FileName="RAM.Data/Shared/UseCaseResponseMessage.cs" Line="16" Column="1" />
-      <File FileName="RAM.Data/AuthUseCaseServices/ExchangeRefreshTokenUseCase.cs" Line="16" Column="58" />
-      <File FileName="RAM.Data/AuthUseCaseServices/LoginUseCase.cs" Line="40" Column="1" />
-      <File FileName="RAM.Data/AuthUseCaseServices/RegisterUserUseCase.cs" Line="19" Column="1" />
-      <File FileName="RAM.Infrastructure/RAM.Infrastructure.csproj" Line="27" Column="15" />
-      <File FileName="RAM.Data/Dto/Request/MemoriesRequest.cs" Line="18" Column="2" />
+      <File FileName="RAM.Data/RAM.Data.csproj" Line="28" Column="53" />
+      <File FileName="RAM.Data/CoreModule.cs" Line="17" Column="1" />
+      <File FileName="RAM.Infrastructure/InternalConstructorFinder.cs" Line="13" Column="1" />
+      <File FileName="RAM.Infrastructure/InfrastructureModule.cs" Line="13" Column="2" />
+      <File FileName="RAM.Infrastructure/RAM.Infrastructure.csproj" Line="28" Column="15" />
+      <File FileName="RAM.Infrastructure/Logging/Logger.cs" Line="18" Column="1" />
+      <File FileName="RAM.WebApi/Extensions/ModelStateExtensions.cs" Line="18" Column="1" />
+      <File FileName="RAM.WebApi/Extensions/ResponseExtensions.cs" Line="17" Column="1" />
+      <File FileName="RAM.WebApi/Helpers/Strings.cs" Line="14" Column="1" />
+      <File FileName="RAM.Data/Dto/Request/AuthRequests/RegisterUserRequest.cs" Line="31" Column="1" />
+      <File FileName="RAM.Data/Dto/API_UI_DTO/Request/ExchangeRefreshTokenRequest.cs" Line="10" Column="1" />
+      <File FileName="RAM.Data/Dto/API_UI_DTO/Request/LoginRequest.cs" Line="8" Column="6" />
+      <File FileName="RAM.Data/Dto/API_UI_DTO/Response/ExchangeRefreshTokenResponse.cs" Line="18" Column="1" />
+      <File FileName="RAM.Data/Dto/API_UI_DTO/Response/LoginResponse.cs" Line="18" Column="1" />
+      <File FileName="RAM.Data/Shared/AuthSettings.cs" Line="8" Column="2" />
+      <File FileName="RAM.Infrastructure/Helpers/Validation/ExchangeRefreshTokenRequestValidator.cs" Line="15" Column="1" />
+      <File FileName="RAM.Infrastructure/Helpers/Validation/LoginRequestValidator.cs" Line="11" Column="49" />
+      <File FileName="RAM.Infrastructure/Helpers/Validation/RegisterUserRequestValidator.cs" Line="19" Column="1" />
+      <File FileName="RAM.WebApi/Presenters/ExchangeRefreshTokenPresenter.cs" Line="25" Column="1" />
+      <File FileName="RAM.WebApi/Presenters/JsonContentResult.cs" Line="14" Column="1" />
+      <File FileName="RAM.WebApi/Helpers/JsonSerializer.cs" Line="25" Column="1" />
+      <File FileName="RAM.WebApi/Presenters/LoginPresenter.cs" Line="25" Column="1" />
+      <File FileName="RAM.WebApi/Presenters/RegisterUserPresenter.cs" Line="25" Column="1" />
+      <File FileName="RAM.WebApi/appsettings.json" Line="1" Column="1" />
+      <File FileName="RAM.WebApi/appsettings.Development.json" Line="20" Column="2" />
+      <File FileName="RAM.Infrastructure/appsettings.json" Line="3" Column="92" />
+      <File FileName="RAM.WebApi/Program.cs" Line="27" Column="26" />
+      <File FileName="RAM.WebApi/Startup.cs" Line="9" Column="13" />
+      <File FileName="RAM.WebApi/Controllers/AuthenticationController.cs" Line="9" Column="65" />
+      <File FileName="RAM.Infrastructure/Data/RAMDbContext.cs" Line="1" Column="1" />
+      <File FileName="RAM.Infrastructure/Data/Identity/AppIdentityDbContext.cs" Line="1" Column="1" />
+      <File FileName="RAM.Infrastructure/Data/Identity/AppUser.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="RAM" expanded="True">
-            <Node name="RAM.Data" expanded="True" selected="True">
-              <Node name="Dto" expanded="True">
-                <Node name="Request" expanded="True" />
+          <Node name="RAM" expanded="True" selected="True">
+            <Node name="RAM.Infrastructure" expanded="True">
+              <Node name="Data" expanded="True">
+                <Node name="Identity" expanded="True" />
               </Node>
             </Node>
-            <Node name="RAM.Infrastructure" expanded="True" />
-            <Node name="RAM.WebApi" expanded="True" />
           </Node>
         </State>
       </Pad>

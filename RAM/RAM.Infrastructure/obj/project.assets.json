@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Autofac/5.1.2": {
+      "Autofac/5.2.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Autofac.dll": {}
@@ -35,6 +35,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "FluentValidation/8.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.3": {
@@ -1578,18 +1590,32 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "RAM.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Autofac": "5.2.0",
+          "Autofac.Extensions.DependencyInjection": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RAM.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RAM.Data.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "Autofac/5.1.2": {
-      "sha512": "iGEx5Cm6Uor6/bZkgCHHjJO8cEQvDSOxgzNmHGJgGOnLDCe0b8NpOlhotsqx8dFvBDCsEX/V3YGRR30sRQLsxw==",
+    "Autofac/5.2.0": {
+      "sha512": "V8dBH0dsv75uDzl7Sw+HkhKDPUw2eXnlMjcSVMH+tLo2s67MpTKGyDj1pDcpR+IF2u4YRs0s3/x7R88YJzIWvg==",
       "type": "package",
-      "path": "autofac/5.1.2",
+      "path": "autofac/5.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "autofac.5.1.2.nupkg.sha512",
+        "autofac.5.2.0.nupkg.sha512",
         "autofac.nuspec",
         "icon.png",
         "lib/net461/Autofac.dll",
@@ -1635,6 +1661,25 @@
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "FluentValidation/8.6.2": {
+      "sha512": "N2vz+f6pAX9AI19hu83U2LJjjc/ETzWGlICVanu3DIG76QhzEu3PR/CQSFBX69PRuBTivrW4jhBzeV7dXIfqyw==",
+      "type": "package",
+      "path": "fluentvalidation/8.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.8.6.2.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net45/FluentValidation.dll",
+        "lib/net45/FluentValidation.xml",
+        "lib/netstandard1.1/FluentValidation.dll",
+        "lib/netstandard1.1/FluentValidation.xml",
+        "lib/netstandard1.6/FluentValidation.dll",
+        "lib/netstandard1.6/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.3": {
@@ -5745,13 +5790,19 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "RAM.Data/1.0.0": {
+      "type": "project",
+      "path": "../RAM.Data/RAM.Data.csproj",
+      "msbuildProject": "../RAM.Data/RAM.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper >= 9.0.0",
-      "Autofac >= 5.1.2",
+      "Autofac >= 5.2.0",
       "Autofac.Extensions.DependencyInjection >= 6.0.0",
+      "FluentValidation >= 8.6.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.3",
       "Microsoft.EntityFrameworkCore >= 3.1.3",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.3",
@@ -5761,6 +5812,7 @@
       "Microsoft.Extensions.Configuration.Json >= 3.1.3",
       "Microsoft.IdentityModel.Tokens >= 6.5.0",
       "NLog >= 4.7.0",
+      "RAM.Data >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 4.7.0",
       "System.IdentityModel.Tokens.Jwt >= 6.5.0"
     ]
@@ -5782,7 +5834,7 @@
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/alpha/.config/NuGet/NuGet.Config"
+        "/Users/alpha/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5792,7 +5844,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/alpha/Documents/hacking/office-work/RAM-PROJECT/RAM/RAM.Data/RAM.Data.csproj": {
+              "projectPath": "/Users/alpha/Documents/hacking/office-work/RAM-PROJECT/RAM/RAM.Data/RAM.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5810,11 +5866,15 @@
           },
           "Autofac": {
             "target": "Package",
-            "version": "[5.1.2, )"
+            "version": "[5.2.0, )"
           },
           "Autofac.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[8.6.2, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",

@@ -21,7 +21,7 @@ namespace RAM.Data.Domain.Models
         private readonly List<RefreshToken> _refreshTokens = new List<RefreshToken>();
         public IReadOnlyCollection<RefreshToken> RefreshTokens => _refreshTokens.AsReadOnly();
 
-        internal ApiUser(
+        public ApiUser(
              string firstName,
              string lastName,
              string identityId,

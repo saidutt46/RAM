@@ -138,7 +138,8 @@ namespace RAM.WebApi
             {
                 b.AllowAnyMethod()
                 .AllowAnyHeader()
-                .AllowAnyOrigin();
+                .WithOrigins("http://localhost:4200")
+                .AllowCredentials();
             }));
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -227,8 +228,8 @@ namespace RAM.WebApi
             app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseCors("CorsPolicy");
             app.UseMvc();
-            app.UseCors();
         }
     }
 }

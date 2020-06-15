@@ -43,6 +43,8 @@ namespace RAM.WebApi.Controllers
 
         // POST api/auth/login
         [HttpPost("login")]
+        [ProducesResponseType(typeof(JsonContentResult), 200)]
+        [ProducesResponseType(400)]
         public async Task<ActionResult> Login([FromBody] Data.Dto.API_UI_DTO.Request.LoginRequest request)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
@@ -52,6 +54,8 @@ namespace RAM.WebApi.Controllers
 
         // POST api/auth/refreshtoken
         [HttpPost("refreshtoken")]
+        [ProducesResponseType(typeof(JsonContentResult), 200)]
+        [ProducesResponseType(400)]
         public async Task<ActionResult> RefreshToken([FromBody] Data.Dto.API_UI_DTO.Request.ExchangeRefreshTokenRequest request)
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
@@ -62,6 +66,8 @@ namespace RAM.WebApi.Controllers
         // POST api/accounts
         [HttpPost]
         [Route("register")]
+        [ProducesResponseType(typeof(JsonContentResult), 200)]
+        [ProducesResponseType(400)]
         public async Task<ActionResult> Post([FromBody] Data.Dto.API_UI_DTO.Request.RegisterUserRequest request)
         {
             if (!ModelState.IsValid)
@@ -74,7 +80,8 @@ namespace RAM.WebApi.Controllers
                 request.Email,
                 request.UserName,
                 request.Password), _registerUserPresenter);
-            return _registerUserPresenter.ContentResult;
-        }
+            var result = _registerUserPresenter.ContentResult;
+            return result;
+            }
     }
 }

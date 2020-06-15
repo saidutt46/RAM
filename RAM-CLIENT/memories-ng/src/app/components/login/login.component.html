@@ -1,0 +1,19 @@
+<div fxFlex fxLayout="column" fxLayoutGap="32px">
+  <mat-toolbar color="primary" class="card-header">Login</mat-toolbar>
+  <div class="dialog-container">
+    <form [formGroup]="loginForm"
+  fxFlex fxLayout="column" fxLayoutGap="16px">
+    <mat-form-field>
+      <input id="username" matInput formControlName="userName" placeholder="User Name" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input id="password" matInput  formControlName="password"
+      placeholder="Password" required>
+    </mat-form-field>
+  </form>
+  </div>
+  <mat-toolbar class="pop-up-dialog-footer" fxLayoutAlign="end center">
+    <button mat-button color="secondary" (click)="close()">Cancel</button>
+    <button [disabled]="loginForm.invalid" mat-flat-button color="primary" (click)="loginUser()">Register</button>
+  </mat-toolbar>
+</div>

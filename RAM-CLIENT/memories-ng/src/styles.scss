@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// default theme styling
+// notification for default theme
+.success-notification {
+  background-color: rgb(58, 233, 23);
+}
+
+.error-notification {
+  background-color: red;;
+}
+
+.info-notification {
+  background-color: beige;
+}
+
+.warning-notification {
+  background-color: yellow;
+}
+
+// default theme styling ends here
+
+.pop-up-dialog .mat-dialog-container {
+  padding: 0 !important;
+  margin: 0 !important;
+
+  .dialog-container {
+    padding: 16px;
+  }
+
+}
+
+.pop-up-dialog-footer {
+  -webkit-box-shadow: 0.2px 7px 15px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0.2px 7px 15px rgba(0, 0, 0, 0.24);
+  box-shadow: 0.2px 7px 15px rgba(0, 0, 0, 0.24) !important;
+  background-color: none !important;
+}

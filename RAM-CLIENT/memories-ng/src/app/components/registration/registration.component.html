@@ -1,0 +1,31 @@
+<div fxFlex fxLayout="column" fxLayoutGap="32px">
+  <mat-toolbar color="primary" class="card-header">Register User</mat-toolbar>
+  <div class="dialog-container">
+    <form [formGroup]="registrationForm"
+  fxFlex fxLayout="column" fxLayoutGap="16px">
+    <mat-form-field>
+      <input id="name" matInput formControlName="firstName" placeholder="First Name" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input id="username" matInput formControlName="lastName" placeholder="Last Name" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input id="username" matInput formControlName="userName" placeholder="User Name" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input id="email" matInput email="true" formControlName="email" placeholder="Email" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input id="password" matInput  formControlName="password"
+      placeholder="Password" required>
+    </mat-form-field>
+  </form>
+  </div>
+  <mat-toolbar class="pop-up-dialog-footer" fxLayoutAlign="end center">
+    <button mat-button color="secondary" (click)="close()">Cancel</button>
+    <button [disabled]="registrationForm.invalid" mat-flat-button color="primary" (click)="registerUser()">Register</button>
+  </mat-toolbar>
+</div>

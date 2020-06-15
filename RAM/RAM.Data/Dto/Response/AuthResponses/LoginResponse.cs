@@ -15,7 +15,7 @@ namespace RAM.Data.Dto.Response.AuthResponses
             Errors = errors;
         }
 
-        public LoginResponse(AccessToken accessToken, string refreshToken, bool success = false, string message = null) : base(success, message)
+        public LoginResponse(AccessToken accessToken, string refreshToken, bool success = true, string message = null) : base(success, message)
         {
             AccessToken = accessToken;
             RefreshToken = refreshToken;

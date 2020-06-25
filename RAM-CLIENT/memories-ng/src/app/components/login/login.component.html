@@ -7,12 +7,13 @@
       <input id="username" matInput formControlName="userName" placeholder="User Name" required>
     </mat-form-field>
     <mat-form-field>
-      <input id="password" matInput  formControlName="password"
+      <input [type]="hide ? 'password' : 'text'" type="password" id="password" matInput  formControlName="password"
       placeholder="Password" required>
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </mat-form-field>
   </form>
   </div>
-  <mat-toolbar class="pop-up-dialog-footer" fxLayoutAlign="end center">
+  <mat-toolbar class="pop-up-dialog-footer" fxLayoutAlign="end center" fxLayoutGap="16px">
     <button mat-button color="secondary" (click)="close()">Cancel</button>
     <button [disabled]="loginForm.invalid" mat-flat-button color="primary" (click)="loginUser()">Register</button>
   </mat-toolbar>

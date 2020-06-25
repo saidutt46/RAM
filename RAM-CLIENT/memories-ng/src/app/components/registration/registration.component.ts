@@ -11,6 +11,9 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class RegistrationComponent implements OnInit {
   registrationForm: FormGroup;
+  userNameFocus: boolean;
+  passwordFocus: boolean;
+  hide = true;
 
   constructor(
     @Inject(NOTIFICATION_SERV_TOKEN) private notifier: INotificationService,
@@ -43,9 +46,11 @@ export class RegistrationComponent implements OnInit {
 
     this.authService.registerUser(user).subscribe(res => {
       console.warn(res);
-      this.notifier.openSuccessNotification(`Successfully created user ${user.userName}`);
+      if (res.success) {
+        this.notifier.openSuccessNotification(`Successfully created user ${user.userName}`);
+      }
     }, (err: Error) => {
-      this.notifier.openErrorNotification(`An error occured`);
+      this.notifier.openErrorNotification(`Error occured`);
     });
     this.dialog.closeAll();
   }

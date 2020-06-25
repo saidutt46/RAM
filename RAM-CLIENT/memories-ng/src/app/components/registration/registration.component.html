@@ -12,19 +12,27 @@
     </mat-form-field>
 
     <mat-form-field>
-      <input id="username" matInput formControlName="userName" placeholder="User Name" required>
+      <input id="username" (focus)="userNameFocus = true" (focusout)="userNameFocus = false" matInput formControlName="userName" placeholder="User Name" required>
+      <mat-hint *ngIf="userNameFocus">
+        No special characters or spaces allowed
+      </mat-hint>
     </mat-form-field>
 
     <mat-form-field>
       <input id="email" matInput email="true" formControlName="email" placeholder="Email" required>
     </mat-form-field>
     <mat-form-field>
-      <input id="password" matInput  formControlName="password"
+      <input [type]="hide ? 'password' : 'text'" (focus)="passwordFocus = true" (focusout)="passwordFocus = false"
+      id="password" matInput  formControlName="password"
       placeholder="Password" required>
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      <mat-hint *ngIf="passwordFocus">
+        Password must contain at least one special character, number, upper case.
+      </mat-hint>
     </mat-form-field>
   </form>
   </div>
-  <mat-toolbar class="pop-up-dialog-footer" fxLayoutAlign="end center">
+  <mat-toolbar class="pop-up-dialog-footer" fxLayoutAlign="end center" fxLayoutGap="16px">
     <button mat-button color="secondary" (click)="close()">Cancel</button>
     <button [disabled]="registrationForm.invalid" mat-flat-button color="primary" (click)="registerUser()">Register</button>
   </mat-toolbar>

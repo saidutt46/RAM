@@ -1,8 +1,8 @@
 <mat-toolbar color="primary" fxFlex fxLayout="row" fxLayoutAlign="space-between center">
   <span class="memories-title"> <span class="ram-logo">R</span>andom <span class="ram-logo">A</span>ccess <span class="ram-logo">M</span>emories</span>
   <div fxLayout="row" fxLayoutGap="16px">
-    <button mat-button (click)="loginUser()" *ngIf="!loggedIn">Login</button>
-    <button mat-button (click)="registerUser()" *ngIf="!loggedIn">Register</button>
-    <button mat-button (click)="logOut()" *ngIf="loggedIn"></button>
+    <button mat-button (click)="loginUser()" *ngIf="!isLoggedIn()">Login</button>
+    <button mat-button (click)="registerUser()" *ngIf="!isLoggedIn()">Register</button>
+    <button mat-button (click)="logOut()" *ngIf="isLoggedIn()">Logout</button>
   </div>
 </mat-toolbar>

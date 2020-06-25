@@ -7,6 +7,7 @@ export class LoginResponse {
   accessToken: AccessToken;
   refreshToken: string;
   success: boolean;
+  errors?: string[];
 }
 
 export class AccessToken {

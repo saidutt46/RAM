@@ -11,7 +11,6 @@ import { PostAuthenticationService } from 'app/services/post-authentication.serv
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  loggedIn: boolean;
 
   constructor(
     @Inject(NOTIFICATION_SERV_TOKEN) private notifier: INotificationService,
@@ -21,7 +20,6 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.loggedIn = this.postAuthService.isLoggedIn();
   }
 
   loginUser() {
@@ -40,6 +38,11 @@ export class HeaderComponent implements OnInit {
 
   logOut() {
     this.postAuthService.logOut();
+  }
+
+  isLoggedIn(): boolean {
+    const token = localStorage.getItem('token');
+    return token ? true : false;
   }
 
 }

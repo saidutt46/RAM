@@ -12,6 +12,7 @@ import { PostAuthenticationService } from 'app/services/post-authentication.serv
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
+  hide = true;
 
   constructor(
     @Inject(NOTIFICATION_SERV_TOKEN) private notifier: INotificationService,

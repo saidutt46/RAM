@@ -9,4 +9,5 @@ export class RegistrationModel {
 export class RegistrationResponse {
   success: boolean;
   id: string;
+  errors?: string[];
 }

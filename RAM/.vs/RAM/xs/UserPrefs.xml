@@ -3,10 +3,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="RAM.WebApi/Controllers/AuthenticationController.cs">
     <Files>
       <File FileName="RAM.WebApi/Controllers/AuthenticationController.cs" Line="68" Column="28" />
-      <File FileName="RAM.WebApi/Presenters/LoginPresenter.cs" Line="9" Column="57" />
-      <File FileName="RAM.Data/Dto/Response/AuthResponses/LoginResponse.cs" Line="9" Column="21" />
-      <File FileName="RAM.WebApi/Startup.cs" Line="231" Column="39" />
-      <File FileName="RAM.WebApi/Presenters/RegisterUserPresenter.cs" Line="15" Column="39" />
+      <File FileName="RAM.WebApi/Presenters/LoginPresenter.cs" />
+      <File FileName="RAM.Data/Dto/Response/AuthResponses/LoginResponse.cs" />
+      <File FileName="RAM.WebApi/Startup.cs" />
+      <File FileName="RAM.WebApi/Presenters/RegisterUserPresenter.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
